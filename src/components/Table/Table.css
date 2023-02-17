@@ -1,0 +1,72 @@
+table {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  color: #000000;
+  border-collapse: collapse;
+  width: 80%;
+  max-width: 1100px;
+}
+
+tbody {
+  display: block;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  max-height: calc(88px * 3);
+  overflow: auto;
+}
+thead {
+  width: calc( 100% - 1rem ); /* scrollbar is average 1em/16px width, remove it from thead width */
+  font-weight: 400 !important;
+  font-size: 16px;
+}
+
+thead, tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+tbody > tr {
+  border-bottom: 1px solid #EEEEEE;
+  height: 88px;
+}
+
+.tr-checked {
+  background: #EDF5FF;
+}
+
+.td-tags-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.td-tag {
+  font-weight: 400;
+  font-size: 18px;
+  color: #217AFF;
+  background: #FFFFFF;
+  border: 1px solid #217AFF;
+  border-radius: 20px;
+  padding: 7px;
+}
+
+.td-text {
+  display: flex;
+  align-items: center;
+}
+
+.td-checkbox {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+
+.highlight {
+  color: red !important;
+}
